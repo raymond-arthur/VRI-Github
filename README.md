@@ -51,6 +51,6 @@ We achieve this by visually examining the Q-Q plot of the data, determinating th
 
 An example of this output can be found here:
 
-[![](blob/main/calculate_statistics.png)<!-- -->](https://github.com/raymond-arthur/VRI-Github-stuff/blob/main/calculate_statistics.png)
+<https://github.com/raymond-arthur/VRI-Github-stuff/blob/main/calculate_statistics.png>
 
 
