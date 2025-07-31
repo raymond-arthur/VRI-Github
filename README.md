@@ -1,0 +1,56 @@
+NFL stats
+================
+2024-01-17
+
+- [Documentation](#Documentation)
+- [Usage and information](#Usage)
+  - [For play-by-play data:](#for-play-by-play-data)
+  - [For game data](#for-game-data)
+- [Data visualization: offensive and defensive EPA per play in a
+  season](#data-visualization-offensive-and-defensive-epa-per-play-in-a-season)
+  - [A note on EPA:](#a-note-on-epa)
+  - [EPA Per play for each team in each
+    season](#epa-per-play-for-each-team-in-each-season)
+  - [Looping for years 1999-2022](#looping-for-years-1999-2022)
+- [Logistic regression analysis of playoffs and
+  wins](#logistic-regression-analysis-of-playoffs-and-wins)
+  - [Some important notes about the
+    data](#some-important-notes-about-the-data)
+  - [Determining the record of each
+    team](#determining-the-record-of-each-team)
+  - [Playoff outcomes](#playoff-outcomes)
+  - [Modeling playoffs ~ wins](#modeling-playoffs--wins)
+- [Linear regression of wins ~ Total
+  EPA](#linear-regression-of-wins--total-epa)
+  - [Calculating EPA for every team in every
+    year:](#calculating-epa-for-every-team-in-every-year)
+
+## Documentation
+
+Documentation for nflfastR can be found here:
+<https://github.com/raymond-arthur/VRI-Github-stuff/> or with the R function `?help` function
+
+``` r
+?help calcstats
+```
+
+<br> <br>
+
+## Code:
+
+The entire codebase for this package can be found here:
+<https://github.com/raymond-arthur/VRI-Github-stuff/blob/main/calculate_statistics.R>
+<br> <br>
+
+### Code aims and goals:
+
+The goal for this package is to create a self-contained and easily usable function that allows for the determination of normality of a large dataset.
+We achieve this through a combination of the following:
+1/ Heuristic determination of normality
+We achieve this by visually examining the Q-Q plot of the data, determinating the quantiles and IQR, determinating of number of outliers, and visually inspection the data.
+
+An example of this output can be found here:
+
+![](blob/main/calculate_statistics.png)<!-- -->
+
+
