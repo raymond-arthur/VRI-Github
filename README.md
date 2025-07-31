@@ -1,6 +1,6 @@
-NFL stats
+Calculate Statistics (_calcstats_)
 ================
-2024-01-17
+A fast and streamlined way to determine normality for big data.
 
 - [Documentation](#Documentation)
 - [Usage and information](#Usage)
@@ -28,7 +28,7 @@ NFL stats
 ## Documentation
 
 Documentation for nflfastR can be found here:
-<https://github.com/raymond-arthur/VRI-Github-stuff/> or with the R function `?help` function
+<https://github.com/raymond-arthur/VRI-Github-stuff/> or with the R `?help` function
 
 ``` r
 ?help calcstats
