@@ -50,7 +50,7 @@ calculate_statistics(your_data$character_column, save = FALSE, plots = TRUE)
 
 <br>
 <br>
-Parameters
+#### Parameters
 
     data_column: The column to analyze (numeric or character)
     
@@ -59,7 +59,7 @@ Parameters
     plots: Logical, whether to generate plots (default: TRUE)
 
 
-Output
+#### Output
 
 For numeric data:
 
