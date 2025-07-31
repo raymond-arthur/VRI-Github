@@ -38,17 +38,23 @@ Documentation for nflfastR can be found here:
 
 ## Code:
 
+
 The entire codebase for this package can be found here:
 <https://github.com/raymond-arthur/VRI-Github-stuff/blob/main/calculate_statistics.R>
 <br> <br>
 
+
 ### Code aims and goals:
 
 The goal for this package is to create a self-contained and easily usable function that allows for the determination of normality of a large dataset.
+
 We achieve this through a combination of the following:
+
 1/ Heuristic determination of normality
+
 We achieve this by visually examining the Q-Q plot of the data, determinating the quantiles and IQR, determinating of number of outliers, and visually inspection the data.
 
+<br> <br>
 An example of this output can be found here:
 
 ![](calculate_statistics.png)<!-- -->
