@@ -1,36 +1,60 @@
 Calculate Statistics (_calcstats_)
 ================
-A fast and streamlined way to determine normality for big data.
+A fast and streamlined R function for comprehensive statistical analysis of numeric and character data columns, with focus on normality assessment for large datasets.
 
+- [Features](#Features)
+- [Installation](#Install)
+- [Usage](#Usage)
 - [Documentation](#Documentation)
+- [Code](#Code)
+  - [Code aim and goals](#code-aims-and-goals:)
 - [Usage and information](#Usage)
-  - [For play-by-play data:](#for-play-by-play-data)
-  - [For game data](#for-game-data)
-- [Data visualization: offensive and defensive EPA per play in a
-  season](#data-visualization-offensive-and-defensive-epa-per-play-in-a-season)
-  - [A note on EPA:](#a-note-on-epa)
-  - [EPA Per play for each team in each
-    season](#epa-per-play-for-each-team-in-each-season)
-  - [Looping for years 1999-2022](#looping-for-years-1999-2022)
-- [Logistic regression analysis of playoffs and
-  wins](#logistic-regression-analysis-of-playoffs-and-wins)
-  - [Some important notes about the
-    data](#some-important-notes-about-the-data)
-  - [Determining the record of each
-    team](#determining-the-record-of-each-team)
-  - [Playoff outcomes](#playoff-outcomes)
-  - [Modeling playoffs ~ wins](#modeling-playoffs--wins)
-- [Linear regression of wins ~ Total
-  EPA](#linear-regression-of-wins--total-epa)
-  - [Calculating EPA for every team in every
-    year:](#calculating-epa-for-every-team-in-every-year)
+
+
+## Features
+
+- Automatic handling of both numeric and character data
+- Comprehensive statistical summaries
+- Normality assessment (skewness, kurtosis, Shapiro-Wilk, Kolmogorov-Smirnov tests)
+- Outlier detection using IQR and standard deviation methods
+- Visualization tools (QQ plots, boxplots, bar charts)
+- Progress tracking and time measurement
+- Option to save results and plots to files
+
+
+## Instal
+
+```r
+# Install required packages if not already installed
+install.packages(c("tidyverse", "data.table", "scales", "nortest", "e1071", "fastqq"))
+```
+
+# Then source the function directly from GitHub:
+source("https://raw.githubusercontent.com/raymond-arthur/VRI-Github-stuff/main/calculate_statistics.R")
+
+## Usage
+# For numeric data
+calculate_statistics(your_data$numeric_column, save = TRUE, plots = TRUE)
+
+# For character data
+calculate_statistics(your_data$character_column, save = FALSE, plots = TRUE)
+
+<br>
+<br>
+Parameters
+
+    data_column: The column to analyze (numeric or character)
+    
+    save: Logical, whether to save results to files (default: FALSE)
+    
+    plots: Logical, whether to generate plots (default: TRUE)
 
 ## Documentation
 
-Documentation for nflfastR can be found here:
+Documentation for _calcstats_ can be found here:
 <https://github.com/raymond-arthur/VRI-Github-stuff/> or with the R `?help` function
 
-``` r
+```r
 ?help calcstats
 ```
 
