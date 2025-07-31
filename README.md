@@ -29,7 +29,9 @@ A fast and streamlined R function for comprehensive statistical analysis of nume
 install.packages(c("tidyverse", "data.table", "scales", "nortest", "e1071", "fastqq"))
 ```
 
-# Then source the function directly from GitHub:
+<br>
+
+Then source the function directly from GitHub:
 ```r
 source("https://raw.githubusercontent.com/raymond-arthur/VRI-Github-stuff/main/calculate_statistics.R")
 ```
