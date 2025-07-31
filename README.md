@@ -39,10 +39,14 @@ source("https://raw.githubusercontent.com/raymond-arthur/VRI-Github-stuff/main/c
 
 ## Usage
 ### For numeric data
+```r
 calculate_statistics(your_data$numeric_column, save = TRUE, plots = TRUE)
+```
 
 ### For character data
+```r
 calculate_statistics(your_data$character_column, save = FALSE, plots = TRUE)
+```
 
 <br>
 <br>
@@ -53,6 +57,33 @@ Parameters
     save: Logical, whether to save results to files (default: FALSE)
     
     plots: Logical, whether to generate plots (default: TRUE)
+
+
+Output
+
+For numeric data:
+
+    Summary statistics (min, max, mean, quartiles)
+
+    NA value analysis
+
+    Normality tests (Shapiro-Wilk, Kolmogorov-Smirnov)
+
+    Skewness and kurtosis measures
+
+    Outlier detection (IQR and SD methods)
+
+    QQ plot and boxplot visualization
+
+For character data:
+
+    Frequency table (top 200 categories)
+
+    NA value analysis
+
+    Bar chart visualization
+
+
 
 ## Documentation
 
@@ -75,17 +106,38 @@ The entire codebase for this package can be found here:
 
 ### Code aims and goals:
 
-The goal for this package is to create a self-contained and easily usable function that allows for the determination of normality of a large dataset.
+The goal of this function is to provide a self-contained, easily usable tool for comprehensive statistical analysis of data columns with special focus on:
 
-We achieve this through a combination of the following:
+    Normality Assessment:
 
-1/ Heuristic determination of normality
+        Visual examination via Q-Q plots
 
-We achieve this by visually examining the Q-Q plot of the data, determinating the quantiles and IQR, determinating of number of outliers, and visually inspection the data.
+        Quantile and IQR analysis
 
-<br> <br>
-An example of this output can be found here:
+        Outlier detection
+
+        Formal statistical tests (for datasets ≤ 5000 observations)
+
+    Big Data Support:
+
+        Efficient processing of large datasets
+
+        Sampling for computationally intensive tests
+
+        Progress tracking
+
+    Automated Reporting:
+
+        Console output of key statistics
+
+        Optional file output
+
+        Visualization generation
+
+### Example Output
 
 ![](calculate_statistics.png)<!-- -->
+
+
 
 
