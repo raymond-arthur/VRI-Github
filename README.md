@@ -3,7 +3,7 @@ Calculate Statistics (_calcstats_)
 A fast and streamlined R function for comprehensive statistical analysis of numeric and character data columns, with focus on normality assessment for large datasets.
 
 - [Features](#Features)
-- [Installation](#Install)
+- [Installation](#Installation)
 - [Usage](#Usage)
 - [Documentation](#Documentation)
 - [Code](#Code)
@@ -22,7 +22,7 @@ A fast and streamlined R function for comprehensive statistical analysis of nume
 - Option to save results and plots to files
 
 
-## Instal
+## Installation
 
 ```r
 # Install required packages if not already installed
@@ -30,7 +30,12 @@ install.packages(c("tidyverse", "data.table", "scales", "nortest", "e1071", "fas
 ```
 
 # Then source the function directly from GitHub:
+```r
 source("https://raw.githubusercontent.com/raymond-arthur/VRI-Github-stuff/main/calculate_statistics.R")
+```
+
+<br>
+<br>
 
 ## Usage
 # For numeric data
