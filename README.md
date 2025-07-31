@@ -7,8 +7,6 @@ A fast and streamlined R function for comprehensive statistical analysis of nume
 - [Usage](#Usage)
 - [Documentation](#Documentation)
 - [Code](#Code)
-  - [Code aim and goals](#code-aims-and-goals:)
-- [Usage and information](#Usage)
 
 
 ## Features
@@ -40,10 +38,10 @@ source("https://raw.githubusercontent.com/raymond-arthur/VRI-Github-stuff/main/c
 <br>
 
 ## Usage
-# For numeric data
+### For numeric data
 calculate_statistics(your_data$numeric_column, save = TRUE, plots = TRUE)
 
-# For character data
+### For character data
 calculate_statistics(your_data$character_column, save = FALSE, plots = TRUE)
 
 <br>
